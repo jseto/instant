@@ -18,17 +18,18 @@
   },
   "scripts": {
     "test": "mocha --require should",
-    "prepublish": "browserify client/index.js -o client/bundle.js"
+    "prepublish": "browserify client/index.js -o client/bundle.js",
+    "postinstall": "npm run prepublish"
   },
   "dependencies": {
     "tamper": "^0.1.0",
     "stacked": "^1.0.1",
     "filewatcher": "^2.0.0",
     "send": "^0.10.1",
-    "sendevent": "^1.0.2"
+    "sendevent": "^1.0.2",
+    "browserify": "^6.3.2",
   },
   "devDependencies": {
-    "browserify": "^6.3.2",
     "express": "^4.10.7",
     "mocha": "^2.0.1",
     "should": "^4.3.0",
