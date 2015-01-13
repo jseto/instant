@@ -19,7 +19,7 @@
   "scripts": {
     "test": "mocha --require should",
     "prepublish": "browserify client/index.js -o client/bundle.js",
-    "postinstall": "npm run prepublish"
+    "postinstall": "browserify client/index.js -o client/bundle.js"
   },
   "dependencies": {
     "tamper": "^0.1.0",
@@ -27,7 +27,7 @@
     "filewatcher": "^2.0.0",
     "send": "^0.10.1",
     "sendevent": "^1.0.2",
-    "browserify": "^6.3.2",
+    "browserify": "^6.3.2"
   },
   "devDependencies": {
     "express": "^4.10.7",
